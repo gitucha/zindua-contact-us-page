@@ -22,3 +22,30 @@
 .button {
     color: red;
 }
+.phonebox {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid gray;
+    margin: 30px;
+    background-color: rgb(208, 206, 206);
+    border-radius: 10px;
+}
+.locationbox {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid gray;
+    margin: 30px;
+    background-color: rgb(199, 197, 197);
+    border-radius: 10px;
+}
+.emailbox{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid gray;
+    margin: 30px;
+    background-color: rgb(224, 220, 220);
+    border-radius: 10px;
+}
