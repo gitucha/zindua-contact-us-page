@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body class="body">
+    <h1 class="zindua">Apply to Zindua School</h1>
+    <h3 class="zindua">Learn to code today and launch a lucrative career in tech</h3>
+    <form>
+        <div class="name">
+            <div class="fname">
+                <label for="Firstname" class="form">First Name</label><br>
+                <input type="text" id="Firstname" name="Firstname" placeholder="First Name" required><br>
+            </div>
+            <div class="fname">
+                <label for="Lastname" class="form">Last Name</label><br>
+                <input type="text" id="Lastname" name="Lastname" placeholder="Last Name" required>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="name">
+            <div class="fname">
+                <label for="phone">Phone Number</label><br>
+                <input id="phone" type="tel" name="phone" required>
+            </div>
+            <div class="fname">
+                <label for="email" class="form">Email Address</label><br>
+                <input type="text" id="email" name="email" placeholder="destroylonely@gmail.com" required>
+            </div>
+        </div>
+        <br>
+        <br>
+        <label for="select" class="form">Choose your preferred program</label><br>
+        <select name="select" autofocus class="selects">
+            <option></option>
+            <option>software engineering</option>
+            <option>Data science</option>
+            <option>Data analytics</option>
+            <option>Frontend Development</option>
+            <option>DevOps engineering (for Advanced Devs)</option>
+            <option>Undecided.Help me choose a program!</option>
+        </select>
+        <br>
+        <br>
+        <label for="select2" class="form">Choose your preferred schedule</label><br>
+        <select name="select2" class="selects">
+            <option></option>
+            <option>Part-time</option>
+            <option>Full-Time</option>
+        </select>
+        <br>
+        <br>
+        <label for="select3" class="form">When would you like to start your program</label><br>
+        <select name="select3" class="selects">
+            <option></option>
+            <option>April 7th 2025</option>
+            <option>April 19th 2025</option>
+            <option>May 19th 2025</option>
+            <option>June 9th 2025</option>
+            <option>July 19th 2025</option>
+            <option>September 1st 2025</option>
+            <option>October 13th 2025</option>
+            <option>January 12th 2026</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" id="submit">Complete application</button>
+    </form>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+
+</html>
